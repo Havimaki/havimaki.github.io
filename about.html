@@ -61,6 +61,23 @@
       color: #404040;
     }
 
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
     /*     .lg {
       font-size: 20px;
       margin-right: 5px;
@@ -73,16 +90,18 @@
     <h1> <a href="https://havimaki.github.io">Danielle Havimaki</a></h1>
     <br>
     <p>Some photography:</p>
-    <img src="./public/camkix.jpg" width="500" />
-    <img src="./public/dennis-horseradish.jpg" width="500" />
-    <img src="./public/panorama.jpg" height="333" />
-    <img src="./public/iceland-1.jpg" width="500" />
-    <img src="./public/the-lillies.jpg" width="500" />
-    <img src="./public/canal-flats.JPG" height="333" />
-    <p>Some mockups:</p>
-    <img src="./public/rackoh.jpg" width="500" />
-    <img src="./public/mindofanathlete.jpg" width="500" />
-    <img src="./public/algorithms.jpg" width="500" />
+    <div class="container">
+      <img src="./public/camkix.jpg" width="500" class="overlay" />
+      <img src="./public/dennis-horseradish.jpg" width="500" />
+      <img src="./public/panorama.jpg" height="333" />
+      <img src="./public/iceland-1.jpg" width="500" />
+      <img src="./public/the-lillies.jpg" width="500" />
+      <img src="./public/canal-flats.JPG" height="333" />
+      <p>Some mockups:</p>
+      <img src="./public/rackoh.jpg" width="500" />
+      <img src="./public/mindofanathlete.jpg" width="500" />
+      <img src="./public/algorithms.jpg" width="500" />
+    </div>
   </div>
 </body>
 
