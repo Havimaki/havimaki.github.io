@@ -61,6 +61,12 @@
       color: #404040;
     }
 
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     .overlay {
       position: absolute;
       top: 0;
@@ -91,19 +97,41 @@
     <br>
     <p>Some photography:</p>
     <div class="container">
-      <img src="./public/camkix.jpg" width="500" class="overlay" />
+      <img src="./public/camkix.jpg" width="500" class="image" />
+      <div class="overlay">
+        <div class="text">Camkix photography</div>
+      </div>
     </div>
     <div class="container">
-      <img src="./public/dennis-horseradish.jpg" width="500" class="overlay" />
+      <img src="./public/dennis-horseradish.jpg" width="500" class="image" />
+      <div class="overlay">
+        <div class="text">Dennis' Horseradish</div>
+      </div>
     </div>
-    <img src="./public/panorama.jpg" height="333" />
-    <img src="./public/iceland-1.jpg" width="500" />
-    <img src="./public/the-lillies.jpg" width="500" />
-    <img src="./public/canal-flats.JPG" height="333" />
-    <!-- <p>Some mockups:</p>
-      <img src="./public/rackoh.jpg" width="500" />
-      <img src="./public/mindofanathlete.jpg" width="500" />
-      <img src="./public/algorithms.jpg" width="500" /> -->
+    <div class="container">
+      <img src="./public/panorama.jpg" height="333" class="image" />
+      <div class="overlay">
+        <div class="text">Panorama, BC</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="./public/iceland-1.jpg" width="500" class="image" />
+      <div class="overlay">
+        <div class="text">Reykjavik, Iceland</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="./public/the-lillies.jpg" width="500" class="image" />
+      <div class="overlay">
+        <div class="text">"The Lillies"</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="./public/canal-flats.JPG" height="333" />
+      <div class="overlay">
+        <div class="text">Canal Flats, BC</div>
+      </div>
+    </div>
 
   </div>
 </body>
